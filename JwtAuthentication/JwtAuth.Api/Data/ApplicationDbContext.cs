@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using JwtAuth.Api.Entities;
 
 namespace JwtAuth.Api.Data
 {
@@ -8,5 +9,7 @@ namespace JwtAuth.Api.Data
             : base(options)
         {
         }
+
+        public DbSet<User> Users { get; set; }
     }
 }
